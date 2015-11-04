@@ -241,7 +241,7 @@ sudo apt-get install bitcoin-qt
 
 <ul>
 <li>When trying to install the client got the error message <strong>bitcoin-qt : Depends: libqrencode3(&gt;=3.2.0) bit is not installable</strong> and when trying the library directly <strong>Package libqrencode3 has no installation candidate</strong>. 
-You can fix this by opening the sources.list via <code>sudo apt-get install bitcoin-qt</code> and adding <code>universe</code> behind all the repositories listed there. 
+You can fix this by opening the sources.list via <code>sudo gedit /etc/apt/sources.list</code> and adding <code>universe</code> behind all the repositories listed there. 
 After another <code>apt-get update</code>, bitcoin-qt will install an run just fine und you can disconnect from the internet and continue with point 9 from the original <a href="https://en.bitcoin.it/wiki/How_to_set_up_a_secure_offline_savings_wallet">instructions</a>. Please be advised that you have to open the bitcoin client (and copy the wallet file later on) with <code>sudo</code>, otherwise you want be able to encrypt the wallet file. </li>
 </ul>
 <p>Hope this helps anyone with the same problem!</p>
